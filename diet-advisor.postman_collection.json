@@ -1,0 +1,571 @@
+{
+	"info": {
+		"_postman_id": "3f1d4398-fc30-4f65-b27a-09ee955060c5",
+		"name": "diet-advisor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Product scrape jobs",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-jobs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-jobs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-jobs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-jobs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"source\": \"CALORIES_CALCULATOR\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/products/scrape-jobs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-jobs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-jobs/{id}/cancel",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-jobs",
+										"{id}",
+										"cancel"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product scrape logs",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-logs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-logs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-logs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-logs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by job id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/scrape-logs/jobs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"scrape-logs",
+										"jobs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product migrations",
+					"item": [
+						{
+							"name": "Get by job id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/products/migrations/{jobId}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"migrations",
+										"{jobId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Migrate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"job\": {\r\n        \"id\": \"{jobId}\"\r\n    },\r\n    \"migrationLogsIds\": [],\r\n    \"saveAll\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/products/migrations",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"products",
+										"migrations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/products",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/products/{id}",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"products",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"{id}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/products",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"NAME\",\r\n    \"kcal\": 1,\r\n    \"proteins\": 1,\r\n    \"carbohydrates\": 1,\r\n    \"fats\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/products",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recipes",
+			"item": [
+				{
+					"name": "Recipe migrations",
+					"item": [
+						{
+							"name": "Get by job id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/migrations/{jobId}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"migrations",
+										"{jobId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Migrate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"job\": {\r\n        \"id\": \"{jobId}\"\r\n    },\r\n    \"migrationLogsIds\": [],\r\n    \"saveAll\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/recipes/migrations",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"migrations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Recipe scrape jobs",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-jobs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-jobs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-jobs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-jobs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"source\": \"STRENGTH_FACTORY\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-jobs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-jobs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-jobs/{id}/cancel",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-jobs",
+										"{id}",
+										"cancel"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Recipe scrape logs",
+					"item": [
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-logs",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-logs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-logs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-logs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by job id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/recipes/scrape-logs/jobs/{id}",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"recipes",
+										"scrape-logs",
+										"jobs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/recipes",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/recipes/{id}",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"recipes",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"{id}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/recipes",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
