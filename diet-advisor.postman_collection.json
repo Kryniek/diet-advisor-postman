@@ -564,6 +564,32 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mealNumbers\": [\r\n        1\r\n    ],\r\n    \"name\": \"NAME\",\r\n    \"productsNamesToQuantities\": {\r\n        \"Ziemniaki\": 10,\r\n        \"Burak\": 20\r\n    },\r\n    \"recipe\": \"1. Do something first\\n2. Then do something next.\\n3. End up doing something else.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/recipes",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
