@@ -592,6 +592,118 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Shopping lists",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/shopping-lists",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"shopping-lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/shopping-lists/{id}",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"shopping-lists",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get plain text by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/shopping-lists/{id}/plain",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"shopping-lists",
+								"{id}",
+								"plain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productIdsToQuantities\": {\r\n        \"productId1\": 10,\r\n        \"productId2\": 20\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/shopping-lists",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"shopping-lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recipesIdsToQuantities\": {\r\n        \"recipeId1\": 1,\r\n        \"recipeId2\": 2\r\n    },\r\n    \"additionalProducts\": {\r\n        \"productId1\": 10,\r\n        \"productId2\": 20\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/shopping-lists/generate",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"shopping-lists",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
