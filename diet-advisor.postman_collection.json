@@ -572,7 +572,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"mealNumbers\": [\r\n        1\r\n    ],\r\n    \"name\": \"NAME\",\r\n    \"productsNamesToQuantities\": {\r\n        \"Ziemniaki\": 10,\r\n        \"Burak\": 20\r\n    },\r\n    \"recipe\": \"1. Do something first\\n2. Then do something next.\\n3. End up doing something else.\"\r\n}",
+							"raw": "{\r\n    \"mealNumbers\": [\r\n        1\r\n    ],\r\n    \"name\": \"NAME\",\r\n    \"productsNamesToQuantities\": {\r\n        \"a\": 1,\r\n        \"b\": 1,\r\n        \"c\": 1,\r\n        \"d\": 1,\r\n        \"e\": 1,\r\n        \"f\": 1,\r\n        \"g\": 1,\r\n        \"h\": 1,\r\n        \"i\": 1,\r\n        \"j\": 1\r\n    },\r\n    \"recipe\": \"RECIPE\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -590,12 +590,611 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Parse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Dzień 1\r\nKcal 2726.85 B 134.5 g T 105.18 g W 337.03 g\r\nŚniadanie Kcal: 713.19 B: 30.45 g T: 25.34 g W: 96.04 g\r\nDania\r\nCzekoladowy budyń jaglany z borówkami\r\nSkładniki:\r\n+ Kasza jaglana 50 x gram 50 g\r\n+ Mleko 2% 0.7 x szklanka 161 g\r\n+ Kakao (proszek bez dodatku cukru) 1 x łyżeczka 5 g\r\n+ Miód 2 x łyżeczka 16 g\r\n+ Borówka amerykańska 2 x garść 100 g\r\n+ Skyr borówkowy 1 x opakowanie 150 g\r\n+ Orzechy włoskie 1 x garść 30 g\r\nPrzygotowanie:\r\nKaszę opłukać, przelać wrzątkiem, by straciła charakterystyczną gorycz. Wlać mleko do kaszy, gotować na\r\nniewielkim ogniu, aż kasza będzie miękka (w razie potrzeby podlać kaszę wodą). Ugotowaną kaszę wymieszać z\r\nkakao i miodem, zmiksować na gładki budyń. Borówkę umyć, zblendować na mus. Budyń przelać do miseczki, w\r\njego środek włożyć mus borówkowy i skyr. (lub całe jagody- jeśli nie chcemy ich blendować). Posypać\r\norzechami.\r\nII śniadanie Kcal: 480.2 B: 16.04 g T: 8 g W: 93.58 g\r\nDania\r\nCzekoladowy koktajl\r\nSkładniki:\r\n+ Banan 2 x sztuka 240 g\r\n+ Daktyle 4 x sztuka 20 g\r\n+ Mleko 2% 1.5 x szklanka 345 g\r\n+ Kakao (proszek bez dodatku cukru) 2 x łyżeczka 10 g\r\nPrzygotowanie:\r\nBanana obrać, pokroić. Daktyle można uprzednio namoczyć. Wszystkie składniki umieścić w wysokim naczyniu,\r\nzblendować na gładką konsystencję.\r\nObiad Kcal: 889.85 B: 39.35 g T: 37.62 g W: 107.27 g\r\nDania\r\nMakaron ze szpinakiem, tofu i suszonymi pomidorami\r\nSkładniki:\r\n+ Szpinak 3 x garść 75 g\r\n+ Sól 2 x łyżeczka 12 g\r\n+ Pieprz czarny 2 x szczypta 0.6 g\r\n+ Papryka słodka w proszku 2 x szczypta 0.6 g\r\n+ Jogurt grecki 4 x łyżka 80 g\r\n+ Suszony pomidor w zalewie z oleju 5 x sztuka 100 g\r\nStrona 1 z 14\r\n+ Oliwa z oliwek 2 x łyżeczka 10 g\r\n+ Gałka muszkatołowa mielona 3 x szczypta 0.9 g\r\n+ Tofu wędzone 90 x gram 90 g\r\n+ Makaron 100 x gram 100 g\r\n+ Oregano suszone 4 x szczypta 1.2 g\r\n+ Sos sojowy ciemny 2 x łyżeczka 10 g\r\nPrzygotowanie:\r\nMakaron ugotować al dente. Tofu odsącz z zalewy i pokrój w kostkę, skrop oliwą i dopraw solą, pieprzem,\r\noregano i sosem sojowym. Podsmaż na patelni do zarumienienia, a następnie przełóż na miseczkę. Na tę samą\r\npatelnię wlej oliwę i rozgrzej, wrzuć szpinak podlej odrobiną wrzątku i dopraw. Trzymaj na ogniu co jakiś czas\r\nmieszając do momentu aż szpinak zwiędnie. Dodaj pokrojone suszone pomidory, jogurt, wymieszaj i zagotować.\r\nW razie potrzeby doprawić. Sos połączyć z makaronem i tofu.\r\nKolacja Kcal: 643.6 B: 48.65 g T: 34.22 g W: 40.14 g\r\nDania\r\nSałatka z pomidorkami i serem halloumi\r\nSkładniki:\r\n+ Pomidor koktajlowy 1 x garść 100 g\r\n+ Oliwa z oliwek 2 x łyżeczka 10 g\r\n+ Oliwki 7 x sztuka 21 g\r\n+ Halloumi 2 x plaster 80 g\r\n+ Sól 1 x szczypta 0.3 g\r\n+ Pieprz czarny 1 x szczypta 0.3 g\r\n+ Ogórek świeży 0.5 x sztuka 90 g\r\n+ Miks sałat 1 x garść 25 g\r\n+ Chleb graham 2 x kromka 60 g\r\nPrzygotowanie:\r\nNa talerzu wyłożyć sałatę, pokrojonego ogórka, połówki pomidorków i oliwki. Skropić oliwą. Ser halloumi pokroić\r\nw plastry grubości 1 cm i grillować na patelni grillowej lub grillu. Na przygotowanej sałatce położyć zgrillowany\r\nser. Chleb podpiec w piekarniku lub na suchej patelni, aby powstały grzanki. Sałatkę podawać z grzankami\r\nShake białkowy\r\nSkładniki:\r\n+ Odżywka białkowa - izolat białka serwatkowego 30 x gram 30 g\r\n+ Woda źródlana 1 x szklanka 240 g\r\nPrzygotowanie:\r\nOdżywkę białkową wymieszać z wodą (można dodać trochę mleka do smaku). Wypić bezpośrednio po treningu.\r\nDzień 2\r\nKcal 2748.07 B 144.15 g T 105.09 g W 333.03 g\r\nŚniadanie Kcal: 704.62 B: 22.54 g T: 24.95 g W: 103.49 g\r\nDania\r\nBudyniowa owsianka z malinami\r\nSkładniki:\r\n+ Płatki owsiane 6 x łyżka 60 g\r\n+ Mleko 2% 1.5 x szklanka 345 g\r\n+ Budyń waniliowy (proszek) 4 x łyżeczka 16 g\r\n+ Maliny 2 x garść 140 g\r\n+ Czekolada ciemna (70-85% masy kakaowej) 3 x kostka 30 g\r\nPrzygotowanie:\r\nW garnuszku zagotować połowę ilości mleka, dodać płatki. Do szklanki wlać resztę mleka, rozpuścić proszek\r\nbudyniowy. Gdy płatki owsiane napęcznieją, wlewać powoli mleko z budyniem i jednocześnie mieszać. Chwilę\r\njeszcze gotować, by owsianka zgęstniała. Przelać do miseczki, dodać maliny i czekoladę.\r\nII śniadanie Kcal: 554.09 B: 37.9 g T: 14.87 g W: 75.82 g\r\nDania\r\nSkyr z owocami\r\nSkładniki:\r\n+ Skyr naturalny 2 x opakowanie 300 g\r\n+ Jabłko 1 x sztuka 170 g\r\n+ Rodzynki 2 x łyżka 30 g\r\n+ Cynamon 3 x szczypta 1.5 g\r\n+ Miód 2 x łyżeczka 16 g\r\n+ Orzechy włoskie 4 x sztuka 16 g\r\nPrzygotowanie:\r\nOwoce pokroić na mniejsze kawałki. Wymieszać z serkiem skyr, posypać cynamonem i rodzynkami. Udekorować\r\npokruszonymi orzechami.\r\nObiad Kcal: 902.33 B: 38.27 g T: 52.43 g W: 75.91 g\r\nDania\r\nWrap z tofu i awokado\r\nSkładniki:\r\n+ Tortilla- placek z pełnego ziarna 2 x sztuka 124 g\r\n+ Tofu wędzone 180 x gram 180 g\r\n+ Awokado 0.5 x sztuka 70 g\r\n+ Natka pietruszki 3 x łyżka 36 g\r\n+ Papryka ostra w proszku 2 x szczypta 0.6 g\r\n+ Papryka słodka w proszku 2 x szczypta 0.6 g\r\n+ Sól 1 x szczypta 0.3 g\r\n+ Pieprz czarny 1 x szczypta 0.3 g\r\n+ Oliwa z oliwek 3 x łyżeczka 15 g\r\n+ Papryka czerwona 0.5 x sztuka 115 g\r\n+ Miks sałat 1 x garść 25 g\r\nStrona 3 z 14\r\nPrzygotowanie:\r\nTofu pokroić w plastry, przyprawić i piec w piekarniku aż się zrumieni, a wierzch zrobi się chrupki. Placek\r\npodgrzać w mikrofali lub na patelni. Nałożyć sałatę, tofu, awokado pokrojone w kostkę, paprykę i natkę. Całość\r\nzawinąć w rulon. Zgrillować z dwóch stron, dociskając wrap.\r\nKolacja Kcal: 587.04 B: 45.44 g T: 12.84 g W: 77.81 g\r\nDania\r\nKanapki z ziołowym twarożkiem\r\nSkładniki:\r\n+ Ser twarogowy półtłusty 170 x gram 170 g\r\n+ Jogurt naturalny 3.5 x łyżka 70 g\r\n+ Szczypiorek 1.5 x łyżka 7.5 g\r\n+ Natka pietruszki 1.5 x łyżeczka 9 g\r\n+ Koperek 1.5 x łyżeczka 7.5 g\r\n+ Chleb graham 4 x kromka 120 g\r\n+ Papryka czerwona 0.5 x sztuka 115 g\r\n+ Sól 2 x szczypta 0.6 g\r\n+ Pieprz czarny 2 x szczypta 0.6 g\r\nPrzygotowanie:\r\nZioła drobno posiekać. Ser rozdrobnić widelcem, wymieszać z jogurtem i pozostałymi składnikami. Nałożyć na\r\nchleb, udekorować papryką.",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/recipes/parse",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"recipes",
+								"parse"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
 		{
 			"name": "Shopping lists",
 			"item": [
+				{
+					"name": "Archive",
+					"item": [
+						{
+							"name": "2021.07.31",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kanapki z serem i warzywami\": 1,\r\n        \"Koktajl a'la Snickers\": 1,\r\n        \"Kokosowa owsianka z czekoladą\" : 1,\r\n        \"Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Jajka na miękko z warzywami i chlebem\": 1,\r\n        \"Pasta z awokado i jajek\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Szpinakowa jajecznica\": 1,\r\n        \"Grzanki z masłem orzechowym i bananem\": 1,\r\n        \"Kurczak z warzywami na patelnię\": 2,\r\n        \"Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Miodowy twarożek z jabłkiem\": 1,\r\n        \"Curry wegetariańskie\": 2,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Makaron z kurczakiem i bobem na ostro\": 3,\r\n        \"Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Placuszki twarogowe\": 1,\r\n        \"Koktajl warstwowy z kiwi i bananem\": 1,\r\n        \"Kanapki z serkiem śmietankowym i ogórkiem\": 1,\r\n        \"Bób z czosnkiem i koperkiem\": 1,\r\n        \"Justa - Kanapki z serem i warzywami\": 1,\r\n        \"Justa - Koktajl a'la Snickers\": 1,\r\n        \"Justa - Kokosowa owsianka z czekoladą\" : 1,\r\n        \"Justa - Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Justa - Koktajl Bounty\": 1,\r\n        \"Justa - Jajka na miękko z warzywami i chlebem\": 1,\r\n        \"Justa - Pasta z awokado i jajek\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Justa - Szpinakowa jajecznica\": 1,\r\n        \"Justa - Serek straciatella\": 1,\r\n        \"Justa - Tofu z warzywami na patelnię\": 2,\r\n        \"Justa - Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 1,\r\n        \"Justa - Curry wegetariańskie\": 2,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Justa - Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Justa - Makaron z bobem na ostro\": 3,\r\n        \"Justa - Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Justa - Placuszki twarogowe\": 1,\r\n        \"Justa - Koktajl warstwowy z kiwi i bananem\": 1,\r\n        \"Justa - Kanapki z serkiem śmietankowym i ogórkiem\": 1,\r\n        \"Justa - Bób z czosnkiem i koperkiem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Jabłko\": 170,\r\n        \"Jogurt owocowy\": 150,\r\n        \"Brzoskwinia\": 425,\r\n        \"Skyr pitny mango marakuja\": 660,\r\n        \"Orzechy włoskie\": 30,\r\n        \"Grejpfrut\": 260,\r\n        \"Sok pomarańczowy\": 480,\r\n        \"Truskawki\": 105\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.07",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kokosowa owsianka z czekoladą\": 1,\r\n        \"Miodowy twarożek z jabłkiem\": 4,\r\n        \"Kasza bulgur z tofu, groszkiem i papryką\": 2,\r\n        \"Kanapki z serem i warzywami\": 1,\r\n        \"Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Kasza gryczana po meksykańsku\": 2,\r\n        \"Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Szpinakowa jajecznica\": 1,\r\n        \"Grzanki z masłem orzechowym i bananem\": 1,\r\n        \"Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Makaron z soczewicą w sosie pomidorowym\": 3,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Placuszki twarogowe\": 1,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Bób z czosnkiem i koperkiem\": 1,\r\n        \"Justa - Kokosowa owsianka z czekoladą\": 1,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 4,\r\n        \"Justa - Kasza bulgur z tofu, groszkiem i papryką\": 2,\r\n        \"Justa - Kanapki z serem i warzywami\": 1,\r\n        \"Justa - Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Justa - Koktajl Bounty\": 1,\r\n        \"Justa - Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Justa - Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Justa - Kasza gryczana po meksykańsku\": 2,\r\n        \"Justa - Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Justa - Szpinakowa jajecznica\": 1,\r\n        \"Justa - Serek straciatella\": 1,\r\n        \"Justa - Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Makaron z soczewicą w sosie pomidorowym\": 3,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Justa - Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Justa - Placuszki twarogowe\": 1,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Justa - Bób z czosnkiem i koperkiem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 85,\r\n        \"Truskawki\": 105,\r\n        \"Sok pomarańczowy\": 720,\r\n        \"Jogurt owocowy\": 150\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.14",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kokosowa owsianka z czekoladą\": 1,\r\n        \"Miodowy twarożek z jabłkiem\": 4,\r\n        \"Kasza bulgur z tofu, groszkiem i papryką\": 2,\r\n        \"Kanapki z serem i warzywami\": 1,\r\n        \"Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Kasza gryczana po meksykańsku\": 2,\r\n        \"Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Szpinakowa jajecznica\": 1,\r\n        \"Grzanki z masłem orzechowym i bananem\": 1,\r\n        \"Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Makaron z soczewicą w sosie pomidorowym\": 3,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Placuszki twarogowe\": 1,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Bób z czosnkiem i koperkiem\": 1,\r\n        \"Justa - Kokosowa owsianka z czekoladą\": 1,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 4,\r\n        \"Justa - Kasza bulgur z tofu, groszkiem i papryką\": 2,\r\n        \"Justa - Kanapki z serem i warzywami\": 1,\r\n        \"Justa - Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Justa - Koktajl Bounty\": 1,\r\n        \"Justa - Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Justa - Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Justa - Kasza gryczana po meksykańsku\": 2,\r\n        \"Justa - Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Justa - Szpinakowa jajecznica\": 1,\r\n        \"Justa - Serek straciatella\": 1,\r\n        \"Justa - Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Makaron z soczewicą w sosie pomidorowym\": 3,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Justa - Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Justa - Placuszki twarogowe\": 1,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Justa - Bób z czosnkiem i koperkiem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 85,\r\n        \"Truskawki\": 105,\r\n        \"Sok pomarańczowy\": 720,\r\n        \"Jogurt owocowy\": 150\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.18 - jeden niecały dzień",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kokosowa owsianka z czekoladą\": 1,\r\n        \"Miodowy twarożek z jabłkiem\": 1,\r\n        \"Kanapki z serem i warzywami\": 1,\r\n        \"Justa - Kokosowa owsianka z czekoladą\": 1,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 1,\r\n        \"Justa - Kanapki z serem i warzywami\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.23 - Just + trochę Krystian",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Makaron z soczewicą w sosie pomidorowym\": 2,\r\n        \"Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Placuszki twarogowe\": 1,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Bób z czosnkiem i koperkiem\": 1,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 3,\r\n        \"Justa - Bananowy budyń z kaszy jaglanej\": 1,\r\n        \"Justa - Koktajl Bounty\": 1,\r\n        \"Justa - Makaron z soczewicą w sosie pomidorowym\": 3,\r\n        \"Justa - Tortilla z mozzarellą i warzywami\": 1,\r\n        \"Justa - Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Justa - Serek wiejski z pomidorem i szczypiorkiem\": 1,\r\n        \"Justa - Szpinakowa jajecznica\": 1,\r\n        \"Justa - Serek straciatella\": 1,\r\n        \"Justa - Tofu z warzywami na patelnię\": 2,\r\n        \"Justa - Owsianka z bananem i masłem orzechowym\": 1,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 1,\r\n        \"Justa - Herbaciana owsianka z musem jabłkowym\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Lekka sałatka z pieczonym tofu\": 1,\r\n        \"Justa - Placuszki twarogowe\": 1,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 1,\r\n        \"Justa - Bób z czosnkiem i koperkiem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 85,\r\n        \"Truskawki\": 105,\r\n        \"Sok pomarańczowy\": 240\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.23 - Krystian",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Tortilla z mozzarellą i warzywami\": 2,\r\n        \"Kanapki z serem i warzywami\": 1,\r\n        \"Miodowy twarożek z jabłkiem\": 4,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Jajka na miękko z warzywami i chlebem\": 1,\r\n        \"Pasta z awokado i jajek\": 1,\r\n        \"Szpinakowa jajecznica\": 3\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Jogurt owocowy\": 150,\r\n        \"Jabłko\": 340\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.08.29 - Krystian",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Czekoladowy budyń jaglany z borówkami\": 2,\r\n        \"Czekoladowy koktajl\": 2,\r\n        \"Makaron ze szpinakiem, tofu i suszonymi pomidorami\": 2,\r\n        \"Sałatka z pomidorkami i serem halloumi\": 2,\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Skyr z owocami\": 2,\r\n        \"Wrap z tofu i awokado\": 2,\r\n        \"Kanapki z ziołowym twarożkiem\": 2,\r\n        \"Czekoladowy krem z tofu z owocami\": 1,\r\n        \"Malinowe smoothie bowl\": 1,\r\n        \"Burger z serem halloumi\": 1,\r\n        \"Zapiekanki z pieczarkami i serem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Sok pomarańczowy\": 360\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.09.01 - Pojebany",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Pasta z awokado i jajek\": 1,\r\n        \"Grzanki z masłem orzechowym i bananem\": 1,\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Skyr z owocami\": 2,\r\n        \"Wrap z tofu i awokado\": 2,\r\n        \"Kanapki z ziołowym twarożkiem\": 2,\r\n        \"Justa - Budyniowa owsianka z malinami\": 3,\r\n        \"Justa - Serek straciatella\": 1,\r\n        \"Justa - Skyr z owocami\": 2,\r\n        \"Justa - Wrap z tofu i awokado\": 2,\r\n        \"Justa - Kanapki z ziołowym twarożkiem\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 85,\r\n        \"Truskawki\": 105\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.09.07 - Pojebany 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Śniadaniowa gryczanka z owocami\": 2,\r\n        \"Koktajl leśny mech\": 2,\r\n        \"Makaron w sosie jogurtowym z cukinią i pomidorami\": 2,\r\n        \"Krem pomidorowy z mozzarellą\": 2,\r\n        \"Czekoladowy krem z tofu z owocami\": 1,\r\n        \"Malinowe smoothie bowl\": 1,\r\n        \"Justa - Śniadaniowa gryczanka z owocami\": 2,\r\n        \"Justa - Koktajl leśny mech\": 2,\r\n        \"Justa - Makaron w sosie jogurtowym z cukinią i pomidorami\": 2,\r\n        \"Justa - Krem pomidorowy z mozzarellą\": 2,\r\n        \"Justa - Czekoladowy krem z tofu z owocami\": 1,\r\n        \"Justa - Malinowe smoothie bowl\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Sok pomarańczowy\": 360\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.09.20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Bananowa pasta do pieczywa\": 2,\r\n        \"Tortilla z hummusem, warzywami i fetą\": 2,\r\n        \"Kaszotto z fasolką szparagową\" : 2,\r\n        \"Sałatka grecka\": 2,\r\n        \"Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Gulasz wegetariański z soczewicą\": 2,\r\n        \"Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Szybkie placuszki skyrowe z borówkami\": 2,\r\n        \"Ryż z kurczakiem w sosie słodko-kwaśnym\": 2,\r\n        \"Omlet z parmezanem i pieczarkami\": 2,\r\n        \"Justa - Bananowa pasta do pieczywa\": 2,\r\n        \"Justa - Tortilla z hummusem, warzywami i fetą\": 2,\r\n        \"Justa - Kaszotto z fasolką szparagową\": 2,\r\n        \"Justa - Sałatka grecka\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Gulasz wegetariański z soczewicą\": 2,\r\n        \"Justa - Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Justa - Szybkie placuszki skyrowe z borówkami\": 2,\r\n        \"Justa - Ryż z tofu i ciecierzycą w sosie słodko-kwaśnym\": 2,\r\n        \"Justa - Omlet z parmezanem i pieczarkami\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Orzechy włoskie\": 30,\r\n        \"Sok pomarańczowy\": 960,\r\n        \"Koktajl z białkiem serwatkowym Piątnica\": 1024\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.09.25 - wzór 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Pasta z awokado i jajek\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Zapiekanki z pieczarkami i serem\": 1,\r\n        \"Justa - Budyniowa owsianka z malinami\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Justa - Pasta z awokado i jajek\": 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Jogurt owocowy\": 300,\r\n        \"Sok pomarańczowy\": 480,\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.10.02",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Pasta z awokado i jajek\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Serek wiejski z ogórkiem i szczypiorkiem\": 1,\r\n        \"Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 1,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Zapiekanki z pieczarkami i serem\": 1,\r\n        \"Justa - Budyniowa owsianka z malinami\": 3,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 3,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 1,\r\n        \"Justa - Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 1,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Jogurt owocowy\": 300,\r\n        \"Sok pomarańczowy\": 480,\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210,\r\n        \"Koktajl z białkiem serwatkowym Piątnica\": 512,\r\n        \"Orzechy włoskie\": 30\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.10.12",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Pasta z awokado i jajek\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Kolorowa sałatka owocowa\": 1,\r\n        \"Zapiekanki z pieczarkami i serem\": 1,\r\n        \"Justa - Budyniowa owsianka z malinami\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Justa - Pasta z awokado i jajek\": 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Tortilla z fasolą, awokado i kukurydzą\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Pizza na tortilli z fetą, kukurydzą i ogórkiem\": 2,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Kolorowa sałatka owocowa\": 1,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Jogurt owocowy\": 300,\r\n        \"Sok pomarańczowy\": 480,\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.10.19",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Gruszkowo-malinowy twarożek\": 2,\r\n        \"Pudding chia z gruszką\": 2,\r\n        \"Lekka sałatka z pieczonym tofu 2\": 2,\r\n        \"Owsianka caramel latte\": 2,\r\n        \"Skyr pitny + orzechy włoskie\": 2,\r\n        \"Grzanki z mozzarellą\": 2,\r\n        \"Owsianka owoce leśne\": 2,\r\n        \"Warstwowy deser owocowy\": 2,\r\n        \"Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 1,\r\n        \"Koktajl biało-czerwony\": 1,\r\n        \"Grzanki z awokado i fetą\": 1,\r\n        \"Justa - Gruszkowo-malinowy twarożek\": 2,\r\n        \"Justa - Pudding chia z gruszką\": 2,\r\n        \"Justa - Lekka sałatka z pieczonym tofu 2\": 2,\r\n        \"Justa - Owsianka caramel latte\": 2,\r\n        \"Justa - Skyr pitny + orzechy włoskie\": 2,\r\n        \"Justa - Grzanki z mozzarellą\": 2,\r\n        \"Justa - Owsianka owoce leśne\": 2,\r\n        \"Justa - Warstwowy deser owocowy\": 2,\r\n        \"Justa - Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Justa - Kanapki z serkiem i dżemem\": 1,\r\n        \"Justa - Koktajl biało-czerwony\": 1,\r\n        \"Justa - Grzanki z awokado i fetą\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Orzechy włoskie\": 30\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.10.26",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Budyniowa owsianka ze śliwkami\": 2,\r\n        \"Koktajl bananowo-orzechowy\": 2,\r\n        \"Tosty a'la pizza\": 2,\r\n        \"Owsianka twarożkowa\": 2,\r\n        \"Tortilla z tofu, cukinią i fetą\": 2,\r\n        \"Tosty francuskie z pomidorami i bazylią\": 2,\r\n        \"Owsiane placuszki bananowe\": 2,\r\n        \"Proteinowe tiramisu\": 2,\r\n        \"Jajecznica z kurkami\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 1,\r\n        \"Koktajl biało-czerwony\": 1,\r\n        \"Grzanki z awokado i fetą\": 1,\r\n        \"Justa - Budyniowa owsianka ze śliwkami\": 2,\r\n        \"Justa - Koktajl bananowo-orzechowy\": 2,\r\n        \"Justa - Tosty a'la pizza\": 2,\r\n        \"Justa - Owsianka twarożkowa\": 2,\r\n        \"Justa - Tortilla z tofu, cukinią i fetą\": 2,\r\n        \"Justa - Tosty francuskie z pomidorami i bazylią\": 2,\r\n        \"Justa - Owsiane placuszki bananowe\": 2,\r\n        \"Justa - Proteinowe tiramisu\": 2,\r\n        \"Justa - Jajecznica z kurkami\": 2,\r\n        \"Justa - Kanapki z serkiem i dżemem\": 1,\r\n        \"Justa - Koktajl biało-czerwony\": 1,\r\n        \"Justa - Grzanki z awokado i fetą\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Orzechy włoskie\": 30,\r\n        \"Sok pomarańczowy\": 720\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.11.02 - wzór 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Owsianka twarożkowa\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Krem pomidorowy z mozzarellą\": 2,\r\n        \"Owsianka marchewkowa\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Grzanki z mozzarellą\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Lekka sałatka z pieczonym tofu 2\": 1,\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Pudding chia z gruszką\": 2,\r\n        \"Zapiekanki z pieczarkami i serem\": 2,\r\n        \"Justa - Owsianka twarożkowa\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Krem pomidorowy z mozzarellą\": 2,\r\n        \"Justa - Owsianka marchewkowa\": 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Grzanki z mozzarellą\": 2,\r\n        \"Justa - Kanapki z serkiem i dżemem\": 1,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 1,\r\n        \"Justa - Lekka sałatka z pieczonym tofu 2\": 1,\r\n        \"Justa - Budyniowa owsianka z malinami\": 2,\r\n        \"Justa - Pudding chia z gruszką\": 2,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.11.06 - 3 dni",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Owsianka marchewkowa\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Grzanki z mozzarellą\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 1,\r\n        \"Koktajl Bounty\": 1,\r\n        \"Lekka sałatka z pieczonym tofu 2\": 1,\r\n        \"Justa - Owsianka marchewkowa\": 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Grzanki z mozzarellą\": 2,\r\n        \"Justa - Kanapki z serkiem i dżemem\": 1,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 1,\r\n        \"Justa - Lekka sałatka z pieczonym tofu 2\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.11.12 - 4 dni",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Owsianka twarożkowa\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Krem pomidorowy z mozzarellą\": 2,\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Pudding chia z gruszką\": 2,\r\n        \"Zapiekanki z pieczarkami i serem\": 2,\r\n        \"Justa - Owsianka twarożkowa\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Krem pomidorowy z mozzarellą\": 2,\r\n        \"Justa - Budyniowa owsianka z malinami\": 2,\r\n        \"Justa - Pudding chia z gruszką\": 2,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.11.30 - wzór 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kanapki z serem i warzywami\": 2,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 2,\r\n        \"Skyr z owocami\": 2,\r\n        \"Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Grzanki z awokado i fetą\": 1,\r\n        \"Czekoladowy krem z tofu z owocami\": 2,\r\n        \"Grzanki z masłem orzechowym i bananem\": 2,\r\n        \"Szpinakowa jajecznica\": 2,\r\n        \"Justa - Kokosowa owsianka z czekoladą\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Justa - Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Justa - Pudding chia z gruszką\": 1,\r\n        \"Justa - Grzanki z awokado i fetą\": 1,\r\n        \"Justa - Czekoladowy krem z tofu z owocami\": 2,\r\n        \"Justa - Malinowe smoothie bowl\": 2,\r\n        \"Justa - Szpinakowa jajecznica\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Skyr pitny mango marakuja\": 990,\r\n        \"Orzechy włoskie\": 90,\r\n        \"Grejpfrut\": 260,\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210,\r\n        \"Sok pomarańczowy\": 720\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.12.14 - niepełny",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Kanapki z serkiem i dżemem\": 2,\r\n        \"Skyr z owocami\": 2,\r\n        \"Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Grzanki z awokado i fetą\": 1,\r\n        \"Czekoladowy krem z tofu z owocami\": 1,\r\n        \"Grzanki z masłem orzechowym i bananem\": 1,\r\n        \"Justa - Kokosowa owsianka z czekoladą\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Justa - Owsianka straciatella z borówkami i wiórkami kokosowymi\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Bułka z jajkami i szczypiorkiem\": 2,\r\n        \"Justa - Czekoladowa owsianka z brzoskwinią\": 1,\r\n        \"Justa - Pudding chia z gruszką\": 1,\r\n        \"Justa - Grzanki z awokado i fetą\": 1,\r\n        \"Justa - Czekoladowy krem z tofu z owocami\": 2,\r\n        \"Justa - Malinowe smoothie bowl\": 2,\r\n        \"Justa - Szpinakowa jajecznica\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Skyr pitny mango marakuja\": 330,\r\n        \"Orzechy włoskie\": 30,\r\n        \"Grejpfrut\": 260,\r\n        \"Brzoskwinia\": 170,\r\n        \"Truskawki\": 210,\r\n        \"Sok pomarańczowy\": 360\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2021.12.30 - wzór 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"Budyniowa owsianka z malinami\": 2,\r\n        \"Miodowy twarożek z jabłkiem\": 2,\r\n        \"Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Pasta z awokado i jajek\": 2,\r\n        \"Sałatka z pomidorkami i serem halloumi\": 2,\r\n        \"Kanapki z serkiem i dżemem\": 2,\r\n        \"Koktajl Bounty\": 2,\r\n        \"Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Owsianka marchewkowa\": 1,\r\n        \"Skyr z owocami\": 1,\r\n        \"Zapiekanki z pieczarkami i serem\": 1,\r\n        \"Justa - Budyniowa owsianka z malinami\": 2,\r\n        \"Justa - Miodowy twarożek z jabłkiem\": 2,\r\n        \"Justa - Jajka na miękko z warzywami i chlebem\" : 2,\r\n        \"Justa - Czekoladowy krem z tofu z owocami\": 2,\r\n        \"Justa - Serek wiejski z ogórkiem i szczypiorkiem\": 2,\r\n        \"Justa - Sałatka z pomidorkami i serem halloumi\": 2,\r\n        \"Justa - Kanapki z serkiem i dżemem\": 2,\r\n        \"Justa - Serek straciatella\": 2,\r\n        \"Justa - Bruschetta z pomidorem, mozzarellą i bazylią\": 2,\r\n        \"Justa - Owsianka marchewkowa\": 1,\r\n        \"Justa - Skyr z owocami\": 1,\r\n        \"Justa - Zapiekanki z pieczarkami i serem\": 1\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"Skyr pitny mango marakuja\": 660,\r\n        \"Orzechy włoskie\": 60,\r\n        \"Grejpfrut\": 520,\r\n        \"Jogurt owocowy\": 300\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/shopping-lists/generate",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"shopping-lists",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
 				{
 					"name": "Get",
 					"request": {
@@ -683,7 +1282,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"recipesIdsToQuantities\": {\r\n        \"recipeId1\": 1,\r\n        \"recipeId2\": 2\r\n    },\r\n    \"additionalProducts\": {\r\n        \"productId1\": 10,\r\n        \"productId2\": 20\r\n    }\r\n}",
+							"raw": "{\r\n    \"recipesNamesToQuantities\": {\r\n        \"recipeName1\": 1,\r\n        \"recipeName2\": 2\r\n    },\r\n    \"recipesIdsToQuantities\": {\r\n        \"recipeId1\": 1,\r\n        \"recipeId2\": 2\r\n    },\r\n    \"productsNamesToQuantities\": {\r\n        \"productId1\": 10,\r\n        \"productId2\": 20\r\n    },\r\n    \"productsIdsToQuantities\": {\r\n        \"productId1\": 10,\r\n        \"productId2\": 20\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
